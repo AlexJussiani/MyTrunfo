@@ -17,11 +17,25 @@ namespace MyTrunfo
         public Boolean Player2IsVisible { get; set; }
         public EPlayer CurrentWinner { get; set; }
         public EPlayer LastWinner { get; set; }
+        #endregion
+
+        #region constructor
         public Form1()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region private methods
+        private void StartEvironment()
+        {
+            TiedCards = new List<Car>();
+            Player1IsVisible = true;
+            Player2IsVisible = true;
+        }
+        #endregion
+
+        #region events
         private void txt_name_TextChanged(object sender, EventArgs e)
         {
 
@@ -56,5 +70,8 @@ namespace MyTrunfo
         {
 
         }
+        #endregion
+
+
     }
 }
