@@ -1,6 +1,4 @@
-﻿
-
-namespace MyTrunfo.Enums
+﻿namespace MyTrunfo.Enums
 {
     public enum ECategory
     {
