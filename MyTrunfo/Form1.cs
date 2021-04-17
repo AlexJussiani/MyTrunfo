@@ -1,17 +1,22 @@
-﻿using System;
+﻿using MyTrunfo.Enums;
+using MyTrunfo.Model;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MyTrunfo
 {
     public partial class Form1 : Form
     {
+        #region properties
+        public List<Car> AllCards { get; set; }
+        public List<Car> Player1Cards { get; set; }
+        public List<Car> Player2Cards { get; set; }
+        public List<Car> TiedCards { get; set; }
+        public Boolean Player1IsVisible { get; set; }
+        public Boolean Player2IsVisible { get; set; }
+        public EPlayer CurrentWinner { get; set; }
+        public EPlayer LastWinner { get; set; }
         public Form1()
         {
             InitializeComponent();

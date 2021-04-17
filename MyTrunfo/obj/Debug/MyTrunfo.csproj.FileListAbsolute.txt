@@ -1,0 +1,10 @@
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\bin\Debug\MyTrunfo.exe.config
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\bin\Debug\MyTrunfo.exe
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\bin\Debug\MyTrunfo.pdb
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\obj\Debug\MyTrunfo.csprojAssemblyReference.cache
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\obj\Debug\MyTrunfo.Form1.resources
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\obj\Debug\MyTrunfo.Properties.Resources.resources
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\obj\Debug\MyTrunfo.csproj.GenerateResource.cache
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\obj\Debug\MyTrunfo.csproj.CoreCompileInputs.cache
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\obj\Debug\MyTrunfo.exe
+E:\Documentos\Projetos\MyTrunfo\MyTrunfo\obj\Debug\MyTrunfo.pdb
