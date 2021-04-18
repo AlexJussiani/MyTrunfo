@@ -30,27 +30,52 @@ namespace MyTrunfo
         private void InitializeComponent()
         {
             this.pnl_top = new System.Windows.Forms.Panel();
+            this.btn02 = new System.Windows.Forms.Button();
+            this.btn01 = new System.Windows.Forms.Button();
             this.btn_start = new System.Windows.Forms.Button();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lbl_NameApp = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_player_2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lbCodePlayer2 = new System.Windows.Forms.Label();
+            this.lbCarBrandPlayer2 = new System.Windows.Forms.Label();
+            this.lbCarNamePlayer2 = new System.Windows.Forms.Label();
+            this.lblPricePlayer2Value = new System.Windows.Forms.Label();
+            this.lbldisplacementsPlayer2Value = new System.Windows.Forms.Label();
+            this.lblSpeedPlayer2Value = new System.Windows.Forms.Label();
+            this.label10lblWidthPlayer2Value = new System.Windows.Forms.Label();
+            this.lblPowerPlayer2Value = new System.Windows.Forms.Label();
+            this.lblConsumptionPlayer2Value = new System.Windows.Forms.Label();
+            this.lblPricePlayer2 = new System.Windows.Forms.Label();
+            this.lbldisplacementsPlayer2 = new System.Windows.Forms.Label();
+            this.lblSpeedPlayer2 = new System.Windows.Forms.Label();
+            this.lblWidthPlayer2 = new System.Windows.Forms.Label();
+            this.lblPowerPlayer2 = new System.Windows.Forms.Label();
+            this.lblConsumptionPlayer2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblCountCardsPlayer2 = new System.Windows.Forms.Label();
             this.lblCountPlayer2 = new System.Windows.Forms.Label();
+            this.pnl_player_1 = new System.Windows.Forms.Panel();
+            this.lbCarBrandPlayer1 = new System.Windows.Forms.Label();
+            this.lbCodePlayer1 = new System.Windows.Forms.Label();
+            this.lbCarNamePlayer1 = new System.Windows.Forms.Label();
+            this.lblPricePlayer1Value = new System.Windows.Forms.Label();
+            this.lbldisplacementsPlayer1Value = new System.Windows.Forms.Label();
+            this.lblSpeedPlayer1Value = new System.Windows.Forms.Label();
+            this.lblWidthPlayer1Value = new System.Windows.Forms.Label();
+            this.lblPowerPlayer1Value = new System.Windows.Forms.Label();
+            this.lblConsumptionPlayer1Value = new System.Windows.Forms.Label();
+            this.lblPricePlayer1 = new System.Windows.Forms.Label();
+            this.lbldisplacementsPlayer1 = new System.Windows.Forms.Label();
+            this.lblSpeedPlayer1 = new System.Windows.Forms.Label();
+            this.lblWidthPlayer1 = new System.Windows.Forms.Label();
+            this.lblPowerPlayer1 = new System.Windows.Forms.Label();
+            this.lblConsumptionPlayer1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblCountCardsPlayer1 = new System.Windows.Forms.Label();
+            this.lblCountPlayer1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picThumb40Player2 = new System.Windows.Forms.PictureBox();
             this.picThumb39Player2 = new System.Windows.Forms.PictureBox();
             this.picThumb38Player2 = new System.Windows.Forms.PictureBox();
@@ -92,22 +117,7 @@ namespace MyTrunfo
             this.picThumb2Player2 = new System.Windows.Forms.PictureBox();
             this.picThumb1Player2 = new System.Windows.Forms.PictureBox();
             this.picCardPlay2 = new System.Windows.Forms.PictureBox();
-            this.pnl_player_1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbldisPricePlayer1 = new System.Windows.Forms.Label();
-            this.lbldisplacementsPlayer1 = new System.Windows.Forms.Label();
-            this.lblSpeedPlayer1 = new System.Windows.Forms.Label();
-            this.lblWidthPlayer1 = new System.Windows.Forms.Label();
-            this.lblPowerPlayer1 = new System.Windows.Forms.Label();
-            this.lblConsumptionPlayer1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblCountCardsPlayer1 = new System.Windows.Forms.Label();
-            this.lblCountPlayer1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picThumb40Player1 = new System.Windows.Forms.PictureBox();
             this.picThumb39Player1 = new System.Windows.Forms.PictureBox();
             this.picThumb38Player1 = new System.Windows.Forms.PictureBox();
@@ -149,20 +159,15 @@ namespace MyTrunfo
             this.picThumb2Player1 = new System.Windows.Forms.PictureBox();
             this.picThumb1Player1 = new System.Windows.Forms.PictureBox();
             this.picCardPlay1 = new System.Windows.Forms.PictureBox();
-            this.btn01 = new System.Windows.Forms.Button();
-            this.btn02 = new System.Windows.Forms.Button();
-            this.lbCarNamePlayer1 = new System.Windows.Forms.Label();
-            this.lbCodePlayer1 = new System.Windows.Forms.Label();
-            this.lbCarBrandPlayer1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbCarNamePlayer2 = new System.Windows.Forms.Label();
-            this.lbCarBrandPlayer2 = new System.Windows.Forms.Label();
-            this.lbCodePlayer2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lbNamePlayer1 = new System.Windows.Forms.Label();
+            this.lbNamePlayer2 = new System.Windows.Forms.Label();
             this.pnl_top.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnl_player_2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.pnl_player_1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb40Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb39Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb38Player2)).BeginInit();
@@ -204,8 +209,7 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay2)).BeginInit();
-            this.pnl_player_1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb40Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb39Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb38Player1)).BeginInit();
@@ -247,8 +251,6 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_top
@@ -265,6 +267,24 @@ namespace MyTrunfo
             this.pnl_top.Size = new System.Drawing.Size(774, 42);
             this.pnl_top.TabIndex = 0;
             // 
+            // btn02
+            // 
+            this.btn02.Location = new System.Drawing.Point(218, 9);
+            this.btn02.Name = "btn02";
+            this.btn02.Size = new System.Drawing.Size(75, 23);
+            this.btn02.TabIndex = 5;
+            this.btn02.Text = "BTN 02";
+            this.btn02.UseVisualStyleBackColor = true;
+            // 
+            // btn01
+            // 
+            this.btn01.Location = new System.Drawing.Point(128, 8);
+            this.btn01.Name = "btn01";
+            this.btn01.Size = new System.Drawing.Size(75, 23);
+            this.btn01.TabIndex = 4;
+            this.btn01.Text = "BTN 01";
+            this.btn01.UseVisualStyleBackColor = true;
+            // 
             // btn_start
             // 
             this.btn_start.Location = new System.Drawing.Point(630, 11);
@@ -273,6 +293,7 @@ namespace MyTrunfo
             this.btn_start.TabIndex = 3;
             this.btn_start.Text = "Inicio do Jogo";
             this.btn_start.UseVisualStyleBackColor = true;
+            this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
             // txt_name
             // 
@@ -316,22 +337,23 @@ namespace MyTrunfo
             // pnl_player_2
             // 
             this.pnl_player_2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pnl_player_2.Controls.Add(this.lbNamePlayer2);
             this.pnl_player_2.Controls.Add(this.pictureBox2);
             this.pnl_player_2.Controls.Add(this.lbCodePlayer2);
             this.pnl_player_2.Controls.Add(this.lbCarBrandPlayer2);
             this.pnl_player_2.Controls.Add(this.lbCarNamePlayer2);
-            this.pnl_player_2.Controls.Add(this.label7);
-            this.pnl_player_2.Controls.Add(this.label8);
-            this.pnl_player_2.Controls.Add(this.label9);
-            this.pnl_player_2.Controls.Add(this.label10);
-            this.pnl_player_2.Controls.Add(this.label11);
-            this.pnl_player_2.Controls.Add(this.label12);
-            this.pnl_player_2.Controls.Add(this.label13);
-            this.pnl_player_2.Controls.Add(this.label14);
-            this.pnl_player_2.Controls.Add(this.label15);
-            this.pnl_player_2.Controls.Add(this.label16);
-            this.pnl_player_2.Controls.Add(this.label17);
-            this.pnl_player_2.Controls.Add(this.label18);
+            this.pnl_player_2.Controls.Add(this.lblPricePlayer2Value);
+            this.pnl_player_2.Controls.Add(this.lbldisplacementsPlayer2Value);
+            this.pnl_player_2.Controls.Add(this.lblSpeedPlayer2Value);
+            this.pnl_player_2.Controls.Add(this.label10lblWidthPlayer2Value);
+            this.pnl_player_2.Controls.Add(this.lblPowerPlayer2Value);
+            this.pnl_player_2.Controls.Add(this.lblConsumptionPlayer2Value);
+            this.pnl_player_2.Controls.Add(this.lblPricePlayer2);
+            this.pnl_player_2.Controls.Add(this.lbldisplacementsPlayer2);
+            this.pnl_player_2.Controls.Add(this.lblSpeedPlayer2);
+            this.pnl_player_2.Controls.Add(this.lblWidthPlayer2);
+            this.pnl_player_2.Controls.Add(this.lblPowerPlayer2);
+            this.pnl_player_2.Controls.Add(this.lblConsumptionPlayer2);
             this.pnl_player_2.Controls.Add(this.panel4);
             this.pnl_player_2.Controls.Add(this.picThumb40Player2);
             this.pnl_player_2.Controls.Add(this.picThumb39Player2);
@@ -380,113 +402,140 @@ namespace MyTrunfo
             this.pnl_player_2.TabIndex = 1;
             this.pnl_player_2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label7
+            // lbCodePlayer2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(191, 471);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(25, 13);
-            this.label7.TabIndex = 53;
-            this.label7.Text = "000";
+            this.lbCodePlayer2.AutoSize = true;
+            this.lbCodePlayer2.Location = new System.Drawing.Point(204, 138);
+            this.lbCodePlayer2.Name = "lbCodePlayer2";
+            this.lbCodePlayer2.Size = new System.Drawing.Size(20, 13);
+            this.lbCodePlayer2.TabIndex = 58;
+            this.lbCodePlayer2.Text = "A0";
             // 
-            // label8
+            // lbCarBrandPlayer2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(191, 449);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 13);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "0000";
+            this.lbCarBrandPlayer2.AutoSize = true;
+            this.lbCarBrandPlayer2.Location = new System.Drawing.Point(37, 312);
+            this.lbCarBrandPlayer2.Name = "lbCarBrandPlayer2";
+            this.lbCarBrandPlayer2.Size = new System.Drawing.Size(54, 13);
+            this.lbCarBrandPlayer2.TabIndex = 57;
+            this.lbCarBrandPlayer2.Text = "Car Brand";
             // 
-            // label9
+            // lbCarNamePlayer2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(191, 424);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 13);
-            this.label9.TabIndex = 51;
-            this.label9.Text = "0000";
+            this.lbCarNamePlayer2.AutoSize = true;
+            this.lbCarNamePlayer2.Location = new System.Drawing.Point(41, 138);
+            this.lbCarNamePlayer2.Name = "lbCarNamePlayer2";
+            this.lbCarNamePlayer2.Size = new System.Drawing.Size(50, 13);
+            this.lbCarNamePlayer2.TabIndex = 55;
+            this.lbCarNamePlayer2.Text = "carName";
             // 
-            // label10
+            // lblPricePlayer2Value
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(191, 399);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 13);
-            this.label10.TabIndex = 50;
-            this.label10.Text = "000";
+            this.lblPricePlayer2Value.AutoSize = true;
+            this.lblPricePlayer2Value.Location = new System.Drawing.Point(191, 471);
+            this.lblPricePlayer2Value.Name = "lblPricePlayer2Value";
+            this.lblPricePlayer2Value.Size = new System.Drawing.Size(25, 13);
+            this.lblPricePlayer2Value.TabIndex = 53;
+            this.lblPricePlayer2Value.Text = "000";
             // 
-            // label11
+            // lbldisplacementsPlayer2Value
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(189, 374);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(25, 13);
-            this.label11.TabIndex = 49;
-            this.label11.Text = "000";
+            this.lbldisplacementsPlayer2Value.AutoSize = true;
+            this.lbldisplacementsPlayer2Value.Location = new System.Drawing.Point(191, 449);
+            this.lbldisplacementsPlayer2Value.Name = "lbldisplacementsPlayer2Value";
+            this.lbldisplacementsPlayer2Value.Size = new System.Drawing.Size(31, 13);
+            this.lbldisplacementsPlayer2Value.TabIndex = 52;
+            this.lbldisplacementsPlayer2Value.Text = "0000";
             // 
-            // label12
+            // lblSpeedPlayer2Value
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(189, 348);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 13);
-            this.label12.TabIndex = 48;
-            this.label12.Text = "00";
+            this.lblSpeedPlayer2Value.AutoSize = true;
+            this.lblSpeedPlayer2Value.Location = new System.Drawing.Point(191, 424);
+            this.lblSpeedPlayer2Value.Name = "lblSpeedPlayer2Value";
+            this.lblSpeedPlayer2Value.Size = new System.Drawing.Size(31, 13);
+            this.lblSpeedPlayer2Value.TabIndex = 51;
+            this.lblSpeedPlayer2Value.Text = "0000";
             // 
-            // label13
+            // label10lblWidthPlayer2Value
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(51, 471);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 13);
-            this.label13.TabIndex = 47;
-            this.label13.Text = "Preço K R$";
+            this.label10lblWidthPlayer2Value.AutoSize = true;
+            this.label10lblWidthPlayer2Value.Location = new System.Drawing.Point(191, 399);
+            this.label10lblWidthPlayer2Value.Name = "label10lblWidthPlayer2Value";
+            this.label10lblWidthPlayer2Value.Size = new System.Drawing.Size(25, 13);
+            this.label10lblWidthPlayer2Value.TabIndex = 50;
+            this.label10lblWidthPlayer2Value.Text = "000";
             // 
-            // label14
+            // lblPowerPlayer2Value
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(52, 449);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 13);
-            this.label14.TabIndex = 46;
-            this.label14.Text = "Cilindrada cc";
+            this.lblPowerPlayer2Value.AutoSize = true;
+            this.lblPowerPlayer2Value.Location = new System.Drawing.Point(189, 374);
+            this.lblPowerPlayer2Value.Name = "lblPowerPlayer2Value";
+            this.lblPowerPlayer2Value.Size = new System.Drawing.Size(25, 13);
+            this.lblPowerPlayer2Value.TabIndex = 49;
+            this.lblPowerPlayer2Value.Text = "000";
             // 
-            // label15
+            // lblConsumptionPlayer2Value
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(51, 424);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(115, 13);
-            this.label15.TabIndex = 45;
-            this.label15.Text = "Velocidade Max KM/H";
+            this.lblConsumptionPlayer2Value.AutoSize = true;
+            this.lblConsumptionPlayer2Value.Location = new System.Drawing.Point(189, 348);
+            this.lblConsumptionPlayer2Value.Name = "lblConsumptionPlayer2Value";
+            this.lblConsumptionPlayer2Value.Size = new System.Drawing.Size(19, 13);
+            this.lblConsumptionPlayer2Value.TabIndex = 48;
+            this.lblConsumptionPlayer2Value.Text = "00";
             // 
-            // label16
+            // lblPricePlayer2
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(51, 399);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(60, 13);
-            this.label16.TabIndex = 44;
-            this.label16.Text = "Largura cm";
+            this.lblPricePlayer2.AutoSize = true;
+            this.lblPricePlayer2.Location = new System.Drawing.Point(51, 471);
+            this.lblPricePlayer2.Name = "lblPricePlayer2";
+            this.lblPricePlayer2.Size = new System.Drawing.Size(62, 13);
+            this.lblPricePlayer2.TabIndex = 47;
+            this.lblPricePlayer2.Text = "Preço K R$";
             // 
-            // label17
+            // lbldisplacementsPlayer2
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(51, 374);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(69, 13);
-            this.label17.TabIndex = 43;
-            this.label17.Text = "Potência CV ";
+            this.lbldisplacementsPlayer2.AutoSize = true;
+            this.lbldisplacementsPlayer2.Location = new System.Drawing.Point(52, 449);
+            this.lbldisplacementsPlayer2.Name = "lbldisplacementsPlayer2";
+            this.lbldisplacementsPlayer2.Size = new System.Drawing.Size(68, 13);
+            this.lbldisplacementsPlayer2.TabIndex = 46;
+            this.lbldisplacementsPlayer2.Text = "Cilindrada cc";
             // 
-            // label18
+            // lblSpeedPlayer2
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(51, 348);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(82, 13);
-            this.label18.TabIndex = 42;
-            this.label18.Text = "Consumo km/h ";
+            this.lblSpeedPlayer2.AutoSize = true;
+            this.lblSpeedPlayer2.Location = new System.Drawing.Point(51, 424);
+            this.lblSpeedPlayer2.Name = "lblSpeedPlayer2";
+            this.lblSpeedPlayer2.Size = new System.Drawing.Size(115, 13);
+            this.lblSpeedPlayer2.TabIndex = 45;
+            this.lblSpeedPlayer2.Text = "Velocidade Max KM/H";
+            // 
+            // lblWidthPlayer2
+            // 
+            this.lblWidthPlayer2.AutoSize = true;
+            this.lblWidthPlayer2.Location = new System.Drawing.Point(51, 399);
+            this.lblWidthPlayer2.Name = "lblWidthPlayer2";
+            this.lblWidthPlayer2.Size = new System.Drawing.Size(60, 13);
+            this.lblWidthPlayer2.TabIndex = 44;
+            this.lblWidthPlayer2.Text = "Largura cm";
+            // 
+            // lblPowerPlayer2
+            // 
+            this.lblPowerPlayer2.AutoSize = true;
+            this.lblPowerPlayer2.Location = new System.Drawing.Point(51, 374);
+            this.lblPowerPlayer2.Name = "lblPowerPlayer2";
+            this.lblPowerPlayer2.Size = new System.Drawing.Size(69, 13);
+            this.lblPowerPlayer2.TabIndex = 43;
+            this.lblPowerPlayer2.Text = "Potência CV ";
+            // 
+            // lblConsumptionPlayer2
+            // 
+            this.lblConsumptionPlayer2.AutoSize = true;
+            this.lblConsumptionPlayer2.Location = new System.Drawing.Point(51, 348);
+            this.lblConsumptionPlayer2.Name = "lblConsumptionPlayer2";
+            this.lblConsumptionPlayer2.Size = new System.Drawing.Size(82, 13);
+            this.lblConsumptionPlayer2.TabIndex = 42;
+            this.lblConsumptionPlayer2.Text = "Consumo km/h ";
             // 
             // panel4
             // 
@@ -518,6 +567,251 @@ namespace MyTrunfo
             this.lblCountPlayer2.Size = new System.Drawing.Size(46, 31);
             this.lblCountPlayer2.TabIndex = 0;
             this.lblCountPlayer2.Text = "20";
+            // 
+            // pnl_player_1
+            // 
+            this.pnl_player_1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pnl_player_1.Controls.Add(this.lbNamePlayer1);
+            this.pnl_player_1.Controls.Add(this.pictureBox1);
+            this.pnl_player_1.Controls.Add(this.lbCarBrandPlayer1);
+            this.pnl_player_1.Controls.Add(this.lbCodePlayer1);
+            this.pnl_player_1.Controls.Add(this.lbCarNamePlayer1);
+            this.pnl_player_1.Controls.Add(this.lblPricePlayer1Value);
+            this.pnl_player_1.Controls.Add(this.lbldisplacementsPlayer1Value);
+            this.pnl_player_1.Controls.Add(this.lblSpeedPlayer1Value);
+            this.pnl_player_1.Controls.Add(this.lblWidthPlayer1Value);
+            this.pnl_player_1.Controls.Add(this.lblPowerPlayer1Value);
+            this.pnl_player_1.Controls.Add(this.lblConsumptionPlayer1Value);
+            this.pnl_player_1.Controls.Add(this.lblPricePlayer1);
+            this.pnl_player_1.Controls.Add(this.lbldisplacementsPlayer1);
+            this.pnl_player_1.Controls.Add(this.lblSpeedPlayer1);
+            this.pnl_player_1.Controls.Add(this.lblWidthPlayer1);
+            this.pnl_player_1.Controls.Add(this.lblPowerPlayer1);
+            this.pnl_player_1.Controls.Add(this.lblConsumptionPlayer1);
+            this.pnl_player_1.Controls.Add(this.panel3);
+            this.pnl_player_1.Controls.Add(this.picThumb40Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb39Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb38Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb37Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb36Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb35Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb34Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb33Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb32Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb31Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb30Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb29Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb28Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb27Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb26Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb25Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb24Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb23Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb22Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb21Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb20Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb19Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb18Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb17Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb16Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb15Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb14Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb13Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb12Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb11Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb10Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb9Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb8Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb7Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb6Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb5Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb4Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb3Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb2Player1);
+            this.pnl_player_1.Controls.Add(this.picThumb1Player1);
+            this.pnl_player_1.Controls.Add(this.picCardPlay1);
+            this.pnl_player_1.Location = new System.Drawing.Point(23, 16);
+            this.pnl_player_1.Name = "pnl_player_1";
+            this.pnl_player_1.Size = new System.Drawing.Size(305, 534);
+            this.pnl_player_1.TabIndex = 0;
+            this.pnl_player_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_player_1_Paint);
+            // 
+            // lbCarBrandPlayer1
+            // 
+            this.lbCarBrandPlayer1.AutoSize = true;
+            this.lbCarBrandPlayer1.Location = new System.Drawing.Point(43, 316);
+            this.lbCarBrandPlayer1.Name = "lbCarBrandPlayer1";
+            this.lbCarBrandPlayer1.Size = new System.Drawing.Size(54, 13);
+            this.lbCarBrandPlayer1.TabIndex = 56;
+            this.lbCarBrandPlayer1.Text = "Car Brand";
+            // 
+            // lbCodePlayer1
+            // 
+            this.lbCodePlayer1.AutoSize = true;
+            this.lbCodePlayer1.Location = new System.Drawing.Point(202, 142);
+            this.lbCodePlayer1.Name = "lbCodePlayer1";
+            this.lbCodePlayer1.Size = new System.Drawing.Size(20, 13);
+            this.lbCodePlayer1.TabIndex = 55;
+            this.lbCodePlayer1.Text = "A0";
+            // 
+            // lbCarNamePlayer1
+            // 
+            this.lbCarNamePlayer1.AutoSize = true;
+            this.lbCarNamePlayer1.Location = new System.Drawing.Point(41, 142);
+            this.lbCarNamePlayer1.Name = "lbCarNamePlayer1";
+            this.lbCarNamePlayer1.Size = new System.Drawing.Size(50, 13);
+            this.lbCarNamePlayer1.TabIndex = 54;
+            this.lbCarNamePlayer1.Text = "carName";
+            // 
+            // lblPricePlayer1Value
+            // 
+            this.lblPricePlayer1Value.AutoSize = true;
+            this.lblPricePlayer1Value.Location = new System.Drawing.Point(191, 471);
+            this.lblPricePlayer1Value.Name = "lblPricePlayer1Value";
+            this.lblPricePlayer1Value.Size = new System.Drawing.Size(25, 13);
+            this.lblPricePlayer1Value.TabIndex = 53;
+            this.lblPricePlayer1Value.Text = "000";
+            // 
+            // lbldisplacementsPlayer1Value
+            // 
+            this.lbldisplacementsPlayer1Value.AutoSize = true;
+            this.lbldisplacementsPlayer1Value.Location = new System.Drawing.Point(191, 449);
+            this.lbldisplacementsPlayer1Value.Name = "lbldisplacementsPlayer1Value";
+            this.lbldisplacementsPlayer1Value.Size = new System.Drawing.Size(31, 13);
+            this.lbldisplacementsPlayer1Value.TabIndex = 52;
+            this.lbldisplacementsPlayer1Value.Text = "0000";
+            // 
+            // lblSpeedPlayer1Value
+            // 
+            this.lblSpeedPlayer1Value.AutoSize = true;
+            this.lblSpeedPlayer1Value.Location = new System.Drawing.Point(191, 424);
+            this.lblSpeedPlayer1Value.Name = "lblSpeedPlayer1Value";
+            this.lblSpeedPlayer1Value.Size = new System.Drawing.Size(31, 13);
+            this.lblSpeedPlayer1Value.TabIndex = 51;
+            this.lblSpeedPlayer1Value.Text = "0000";
+            // 
+            // lblWidthPlayer1Value
+            // 
+            this.lblWidthPlayer1Value.AutoSize = true;
+            this.lblWidthPlayer1Value.Location = new System.Drawing.Point(191, 399);
+            this.lblWidthPlayer1Value.Name = "lblWidthPlayer1Value";
+            this.lblWidthPlayer1Value.Size = new System.Drawing.Size(25, 13);
+            this.lblWidthPlayer1Value.TabIndex = 50;
+            this.lblWidthPlayer1Value.Text = "000";
+            // 
+            // lblPowerPlayer1Value
+            // 
+            this.lblPowerPlayer1Value.AutoSize = true;
+            this.lblPowerPlayer1Value.Location = new System.Drawing.Point(189, 374);
+            this.lblPowerPlayer1Value.Name = "lblPowerPlayer1Value";
+            this.lblPowerPlayer1Value.Size = new System.Drawing.Size(25, 13);
+            this.lblPowerPlayer1Value.TabIndex = 49;
+            this.lblPowerPlayer1Value.Text = "000";
+            // 
+            // lblConsumptionPlayer1Value
+            // 
+            this.lblConsumptionPlayer1Value.AutoSize = true;
+            this.lblConsumptionPlayer1Value.Location = new System.Drawing.Point(189, 348);
+            this.lblConsumptionPlayer1Value.Name = "lblConsumptionPlayer1Value";
+            this.lblConsumptionPlayer1Value.Size = new System.Drawing.Size(19, 13);
+            this.lblConsumptionPlayer1Value.TabIndex = 48;
+            this.lblConsumptionPlayer1Value.Text = "00";
+            // 
+            // lblPricePlayer1
+            // 
+            this.lblPricePlayer1.AutoSize = true;
+            this.lblPricePlayer1.Location = new System.Drawing.Point(51, 471);
+            this.lblPricePlayer1.Name = "lblPricePlayer1";
+            this.lblPricePlayer1.Size = new System.Drawing.Size(62, 13);
+            this.lblPricePlayer1.TabIndex = 47;
+            this.lblPricePlayer1.Text = "Preço K R$";
+            // 
+            // lbldisplacementsPlayer1
+            // 
+            this.lbldisplacementsPlayer1.AutoSize = true;
+            this.lbldisplacementsPlayer1.Location = new System.Drawing.Point(52, 449);
+            this.lbldisplacementsPlayer1.Name = "lbldisplacementsPlayer1";
+            this.lbldisplacementsPlayer1.Size = new System.Drawing.Size(68, 13);
+            this.lbldisplacementsPlayer1.TabIndex = 46;
+            this.lbldisplacementsPlayer1.Text = "Cilindrada cc";
+            // 
+            // lblSpeedPlayer1
+            // 
+            this.lblSpeedPlayer1.AutoSize = true;
+            this.lblSpeedPlayer1.Location = new System.Drawing.Point(51, 424);
+            this.lblSpeedPlayer1.Name = "lblSpeedPlayer1";
+            this.lblSpeedPlayer1.Size = new System.Drawing.Size(115, 13);
+            this.lblSpeedPlayer1.TabIndex = 45;
+            this.lblSpeedPlayer1.Text = "Velocidade Max KM/H";
+            // 
+            // lblWidthPlayer1
+            // 
+            this.lblWidthPlayer1.AutoSize = true;
+            this.lblWidthPlayer1.Location = new System.Drawing.Point(51, 399);
+            this.lblWidthPlayer1.Name = "lblWidthPlayer1";
+            this.lblWidthPlayer1.Size = new System.Drawing.Size(60, 13);
+            this.lblWidthPlayer1.TabIndex = 44;
+            this.lblWidthPlayer1.Text = "Largura cm";
+            // 
+            // lblPowerPlayer1
+            // 
+            this.lblPowerPlayer1.AutoSize = true;
+            this.lblPowerPlayer1.Location = new System.Drawing.Point(51, 374);
+            this.lblPowerPlayer1.Name = "lblPowerPlayer1";
+            this.lblPowerPlayer1.Size = new System.Drawing.Size(69, 13);
+            this.lblPowerPlayer1.TabIndex = 43;
+            this.lblPowerPlayer1.Text = "Potência CV ";
+            this.lblPowerPlayer1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblConsumptionPlayer1
+            // 
+            this.lblConsumptionPlayer1.AutoSize = true;
+            this.lblConsumptionPlayer1.Location = new System.Drawing.Point(51, 348);
+            this.lblConsumptionPlayer1.Name = "lblConsumptionPlayer1";
+            this.lblConsumptionPlayer1.Size = new System.Drawing.Size(82, 13);
+            this.lblConsumptionPlayer1.TabIndex = 42;
+            this.lblConsumptionPlayer1.Text = "Consumo km/h ";
+            this.lblConsumptionPlayer1.Click += new System.EventHandler(this.lblConsumptionPlayer1_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel3.Controls.Add(this.lblCountCardsPlayer1);
+            this.panel3.Controls.Add(this.lblCountPlayer1);
+            this.panel3.Location = new System.Drawing.Point(240, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(62, 100);
+            this.panel3.TabIndex = 41;
+            // 
+            // lblCountCardsPlayer1
+            // 
+            this.lblCountCardsPlayer1.AutoSize = true;
+            this.lblCountCardsPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountCardsPlayer1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblCountCardsPlayer1.Location = new System.Drawing.Point(13, 78);
+            this.lblCountCardsPlayer1.Name = "lblCountCardsPlayer1";
+            this.lblCountCardsPlayer1.Size = new System.Drawing.Size(39, 13);
+            this.lblCountCardsPlayer1.TabIndex = 1;
+            this.lblCountCardsPlayer1.Text = "Cards";
+            this.lblCountCardsPlayer1.Click += new System.EventHandler(this.lblCountCardsPlayer1_Click);
+            // 
+            // lblCountPlayer1
+            // 
+            this.lblCountPlayer1.AutoSize = true;
+            this.lblCountPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountPlayer1.Location = new System.Drawing.Point(10, 18);
+            this.lblCountPlayer1.Name = "lblCountPlayer1";
+            this.lblCountPlayer1.Size = new System.Drawing.Size(46, 31);
+            this.lblCountPlayer1.TabIndex = 0;
+            this.lblCountPlayer1.Text = "20";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(207, 312);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(19, 13);
+            this.pictureBox2.TabIndex = 59;
+            this.pictureBox2.TabStop = false;
             // 
             // picThumb40Player2
             // 
@@ -928,213 +1222,14 @@ namespace MyTrunfo
             this.picCardPlay2.TabIndex = 0;
             this.picCardPlay2.TabStop = false;
             // 
-            // pnl_player_1
+            // pictureBox1
             // 
-            this.pnl_player_1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnl_player_1.Controls.Add(this.pictureBox1);
-            this.pnl_player_1.Controls.Add(this.lbCarBrandPlayer1);
-            this.pnl_player_1.Controls.Add(this.lbCodePlayer1);
-            this.pnl_player_1.Controls.Add(this.lbCarNamePlayer1);
-            this.pnl_player_1.Controls.Add(this.label6);
-            this.pnl_player_1.Controls.Add(this.label5);
-            this.pnl_player_1.Controls.Add(this.label4);
-            this.pnl_player_1.Controls.Add(this.label3);
-            this.pnl_player_1.Controls.Add(this.label2);
-            this.pnl_player_1.Controls.Add(this.label1);
-            this.pnl_player_1.Controls.Add(this.lbldisPricePlayer1);
-            this.pnl_player_1.Controls.Add(this.lbldisplacementsPlayer1);
-            this.pnl_player_1.Controls.Add(this.lblSpeedPlayer1);
-            this.pnl_player_1.Controls.Add(this.lblWidthPlayer1);
-            this.pnl_player_1.Controls.Add(this.lblPowerPlayer1);
-            this.pnl_player_1.Controls.Add(this.lblConsumptionPlayer1);
-            this.pnl_player_1.Controls.Add(this.panel3);
-            this.pnl_player_1.Controls.Add(this.picThumb40Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb39Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb38Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb37Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb36Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb35Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb34Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb33Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb32Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb31Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb30Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb29Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb28Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb27Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb26Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb25Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb24Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb23Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb22Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb21Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb20Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb19Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb18Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb17Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb16Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb15Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb14Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb13Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb12Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb11Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb10Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb9Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb8Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb7Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb6Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb5Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb4Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb3Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb2Player1);
-            this.pnl_player_1.Controls.Add(this.picThumb1Player1);
-            this.pnl_player_1.Controls.Add(this.picCardPlay1);
-            this.pnl_player_1.Location = new System.Drawing.Point(23, 16);
-            this.pnl_player_1.Name = "pnl_player_1";
-            this.pnl_player_1.Size = new System.Drawing.Size(305, 534);
-            this.pnl_player_1.TabIndex = 0;
-            this.pnl_player_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_player_1_Paint);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(191, 471);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(25, 13);
-            this.label6.TabIndex = 53;
-            this.label6.Text = "000";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(191, 449);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 52;
-            this.label5.Text = "0000";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(191, 424);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "0000";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(191, 399);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 13);
-            this.label3.TabIndex = 50;
-            this.label3.Text = "000";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(189, 374);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 13);
-            this.label2.TabIndex = 49;
-            this.label2.Text = "000";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(189, 348);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 13);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "00";
-            // 
-            // lbldisPricePlayer1
-            // 
-            this.lbldisPricePlayer1.AutoSize = true;
-            this.lbldisPricePlayer1.Location = new System.Drawing.Point(51, 471);
-            this.lbldisPricePlayer1.Name = "lbldisPricePlayer1";
-            this.lbldisPricePlayer1.Size = new System.Drawing.Size(62, 13);
-            this.lbldisPricePlayer1.TabIndex = 47;
-            this.lbldisPricePlayer1.Text = "Preço K R$";
-            // 
-            // lbldisplacementsPlayer1
-            // 
-            this.lbldisplacementsPlayer1.AutoSize = true;
-            this.lbldisplacementsPlayer1.Location = new System.Drawing.Point(52, 449);
-            this.lbldisplacementsPlayer1.Name = "lbldisplacementsPlayer1";
-            this.lbldisplacementsPlayer1.Size = new System.Drawing.Size(68, 13);
-            this.lbldisplacementsPlayer1.TabIndex = 46;
-            this.lbldisplacementsPlayer1.Text = "Cilindrada cc";
-            // 
-            // lblSpeedPlayer1
-            // 
-            this.lblSpeedPlayer1.AutoSize = true;
-            this.lblSpeedPlayer1.Location = new System.Drawing.Point(51, 424);
-            this.lblSpeedPlayer1.Name = "lblSpeedPlayer1";
-            this.lblSpeedPlayer1.Size = new System.Drawing.Size(115, 13);
-            this.lblSpeedPlayer1.TabIndex = 45;
-            this.lblSpeedPlayer1.Text = "Velocidade Max KM/H";
-            // 
-            // lblWidthPlayer1
-            // 
-            this.lblWidthPlayer1.AutoSize = true;
-            this.lblWidthPlayer1.Location = new System.Drawing.Point(51, 399);
-            this.lblWidthPlayer1.Name = "lblWidthPlayer1";
-            this.lblWidthPlayer1.Size = new System.Drawing.Size(60, 13);
-            this.lblWidthPlayer1.TabIndex = 44;
-            this.lblWidthPlayer1.Text = "Largura cm";
-            // 
-            // lblPowerPlayer1
-            // 
-            this.lblPowerPlayer1.AutoSize = true;
-            this.lblPowerPlayer1.Location = new System.Drawing.Point(51, 374);
-            this.lblPowerPlayer1.Name = "lblPowerPlayer1";
-            this.lblPowerPlayer1.Size = new System.Drawing.Size(69, 13);
-            this.lblPowerPlayer1.TabIndex = 43;
-            this.lblPowerPlayer1.Text = "Potência CV ";
-            this.lblPowerPlayer1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblConsumptionPlayer1
-            // 
-            this.lblConsumptionPlayer1.AutoSize = true;
-            this.lblConsumptionPlayer1.Location = new System.Drawing.Point(51, 348);
-            this.lblConsumptionPlayer1.Name = "lblConsumptionPlayer1";
-            this.lblConsumptionPlayer1.Size = new System.Drawing.Size(82, 13);
-            this.lblConsumptionPlayer1.TabIndex = 42;
-            this.lblConsumptionPlayer1.Text = "Consumo km/h ";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.GrayText;
-            this.panel3.Controls.Add(this.lblCountCardsPlayer1);
-            this.panel3.Controls.Add(this.lblCountPlayer1);
-            this.panel3.Location = new System.Drawing.Point(240, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(62, 100);
-            this.panel3.TabIndex = 41;
-            // 
-            // lblCountCardsPlayer1
-            // 
-            this.lblCountCardsPlayer1.AutoSize = true;
-            this.lblCountCardsPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountCardsPlayer1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblCountCardsPlayer1.Location = new System.Drawing.Point(13, 78);
-            this.lblCountCardsPlayer1.Name = "lblCountCardsPlayer1";
-            this.lblCountCardsPlayer1.Size = new System.Drawing.Size(39, 13);
-            this.lblCountCardsPlayer1.TabIndex = 1;
-            this.lblCountCardsPlayer1.Text = "Cards";
-            this.lblCountCardsPlayer1.Click += new System.EventHandler(this.lblCountCardsPlayer1_Click);
-            // 
-            // lblCountPlayer1
-            // 
-            this.lblCountPlayer1.AutoSize = true;
-            this.lblCountPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountPlayer1.Location = new System.Drawing.Point(10, 18);
-            this.lblCountPlayer1.Name = "lblCountPlayer1";
-            this.lblCountPlayer1.Size = new System.Drawing.Size(46, 31);
-            this.lblCountPlayer1.TabIndex = 0;
-            this.lblCountPlayer1.Text = "20";
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(214, 316);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 13);
+            this.pictureBox1.TabIndex = 57;
+            this.pictureBox1.TabStop = false;
             // 
             // picThumb40Player1
             // 
@@ -1546,93 +1641,23 @@ namespace MyTrunfo
             this.picCardPlay1.TabIndex = 0;
             this.picCardPlay1.TabStop = false;
             // 
-            // btn01
+            // lbNamePlayer1
             // 
-            this.btn01.Location = new System.Drawing.Point(128, 8);
-            this.btn01.Name = "btn01";
-            this.btn01.Size = new System.Drawing.Size(75, 23);
-            this.btn01.TabIndex = 4;
-            this.btn01.Text = "BTN 01";
-            this.btn01.UseVisualStyleBackColor = true;
+            this.lbNamePlayer1.AutoSize = true;
+            this.lbNamePlayer1.Location = new System.Drawing.Point(100, 516);
+            this.lbNamePlayer1.Name = "lbNamePlayer1";
+            this.lbNamePlayer1.Size = new System.Drawing.Size(54, 13);
+            this.lbNamePlayer1.TabIndex = 58;
+            this.lbNamePlayer1.Text = "Jogador 1";
             // 
-            // btn02
+            // lbNamePlayer2
             // 
-            this.btn02.Location = new System.Drawing.Point(218, 9);
-            this.btn02.Name = "btn02";
-            this.btn02.Size = new System.Drawing.Size(75, 23);
-            this.btn02.TabIndex = 5;
-            this.btn02.Text = "BTN 02";
-            this.btn02.UseVisualStyleBackColor = true;
-            // 
-            // lbCarNamePlayer1
-            // 
-            this.lbCarNamePlayer1.AutoSize = true;
-            this.lbCarNamePlayer1.Location = new System.Drawing.Point(41, 142);
-            this.lbCarNamePlayer1.Name = "lbCarNamePlayer1";
-            this.lbCarNamePlayer1.Size = new System.Drawing.Size(50, 13);
-            this.lbCarNamePlayer1.TabIndex = 54;
-            this.lbCarNamePlayer1.Text = "carName";
-            // 
-            // lbCodePlayer1
-            // 
-            this.lbCodePlayer1.AutoSize = true;
-            this.lbCodePlayer1.Location = new System.Drawing.Point(202, 142);
-            this.lbCodePlayer1.Name = "lbCodePlayer1";
-            this.lbCodePlayer1.Size = new System.Drawing.Size(20, 13);
-            this.lbCodePlayer1.TabIndex = 55;
-            this.lbCodePlayer1.Text = "A0";
-            // 
-            // lbCarBrandPlayer1
-            // 
-            this.lbCarBrandPlayer1.AutoSize = true;
-            this.lbCarBrandPlayer1.Location = new System.Drawing.Point(43, 316);
-            this.lbCarBrandPlayer1.Name = "lbCarBrandPlayer1";
-            this.lbCarBrandPlayer1.Size = new System.Drawing.Size(54, 13);
-            this.lbCarBrandPlayer1.TabIndex = 56;
-            this.lbCarBrandPlayer1.Text = "Car Brand";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(214, 316);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 13);
-            this.pictureBox1.TabIndex = 57;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lbCarNamePlayer2
-            // 
-            this.lbCarNamePlayer2.AutoSize = true;
-            this.lbCarNamePlayer2.Location = new System.Drawing.Point(41, 138);
-            this.lbCarNamePlayer2.Name = "lbCarNamePlayer2";
-            this.lbCarNamePlayer2.Size = new System.Drawing.Size(50, 13);
-            this.lbCarNamePlayer2.TabIndex = 55;
-            this.lbCarNamePlayer2.Text = "carName";
-            // 
-            // lbCarBrandPlayer2
-            // 
-            this.lbCarBrandPlayer2.AutoSize = true;
-            this.lbCarBrandPlayer2.Location = new System.Drawing.Point(37, 312);
-            this.lbCarBrandPlayer2.Name = "lbCarBrandPlayer2";
-            this.lbCarBrandPlayer2.Size = new System.Drawing.Size(54, 13);
-            this.lbCarBrandPlayer2.TabIndex = 57;
-            this.lbCarBrandPlayer2.Text = "Car Brand";
-            // 
-            // lbCodePlayer2
-            // 
-            this.lbCodePlayer2.AutoSize = true;
-            this.lbCodePlayer2.Location = new System.Drawing.Point(204, 138);
-            this.lbCodePlayer2.Name = "lbCodePlayer2";
-            this.lbCodePlayer2.Size = new System.Drawing.Size(20, 13);
-            this.lbCodePlayer2.TabIndex = 58;
-            this.lbCodePlayer2.Text = "A0";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(207, 312);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(19, 13);
-            this.pictureBox2.TabIndex = 59;
-            this.pictureBox2.TabStop = false;
+            this.lbNamePlayer2.AutoSize = true;
+            this.lbNamePlayer2.Location = new System.Drawing.Point(91, 517);
+            this.lbNamePlayer2.Name = "lbNamePlayer2";
+            this.lbNamePlayer2.Size = new System.Drawing.Size(77, 13);
+            this.lbNamePlayer2.TabIndex = 60;
+            this.lbNamePlayer2.Text = "PC (Jogador 2)";
             // 
             // Form1
             // 
@@ -1650,6 +1675,11 @@ namespace MyTrunfo
             this.pnl_player_2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.pnl_player_1.ResumeLayout(false);
+            this.pnl_player_1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb40Player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb39Player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb38Player2)).EndInit();
@@ -1691,10 +1721,7 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay2)).EndInit();
-            this.pnl_player_1.ResumeLayout(false);
-            this.pnl_player_1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb40Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb39Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb38Player1)).EndInit();
@@ -1736,8 +1763,6 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1798,28 +1823,28 @@ namespace MyTrunfo
         private System.Windows.Forms.Label lblPowerPlayer1;
         private System.Windows.Forms.Label lblConsumptionPlayer1;
         private System.Windows.Forms.Label lblWidthPlayer1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbldisPricePlayer1;
+        private System.Windows.Forms.Label lblPricePlayer1Value;
+        private System.Windows.Forms.Label lbldisplacementsPlayer1Value;
+        private System.Windows.Forms.Label lblSpeedPlayer1Value;
+        private System.Windows.Forms.Label lblWidthPlayer1Value;
+        private System.Windows.Forms.Label lblPowerPlayer1Value;
+        private System.Windows.Forms.Label lblConsumptionPlayer1Value;
+        private System.Windows.Forms.Label lblPricePlayer1;
         private System.Windows.Forms.Label lbldisplacementsPlayer1;
         private System.Windows.Forms.Label lblSpeedPlayer1;
         private System.Windows.Forms.Panel pnl_player_2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblPricePlayer2Value;
+        private System.Windows.Forms.Label lbldisplacementsPlayer2Value;
+        private System.Windows.Forms.Label lblSpeedPlayer2Value;
+        private System.Windows.Forms.Label label10lblWidthPlayer2Value;
+        private System.Windows.Forms.Label lblPowerPlayer2Value;
+        private System.Windows.Forms.Label lblConsumptionPlayer2Value;
+        private System.Windows.Forms.Label lblPricePlayer2;
+        private System.Windows.Forms.Label lbldisplacementsPlayer2;
+        private System.Windows.Forms.Label lblSpeedPlayer2;
+        private System.Windows.Forms.Label lblWidthPlayer2;
+        private System.Windows.Forms.Label lblPowerPlayer2;
+        private System.Windows.Forms.Label lblConsumptionPlayer2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblCountCardsPlayer2;
         private System.Windows.Forms.Label lblCountPlayer2;
@@ -1874,6 +1899,8 @@ namespace MyTrunfo
         private System.Windows.Forms.Label lbCodePlayer2;
         private System.Windows.Forms.Label lbCarBrandPlayer2;
         private System.Windows.Forms.Label lbCarNamePlayer2;
+        private System.Windows.Forms.Label lbNamePlayer2;
+        private System.Windows.Forms.Label lbNamePlayer1;
     }
 }
 

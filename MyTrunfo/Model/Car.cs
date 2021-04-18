@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyTrunfo.Enums;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -13,8 +14,7 @@ namespace MyTrunfo.Model
         public String Code { get; set; }
         public String Name { get; set; }
         public String Brand { get; set; }
-        //public ECountry Coutry;
-
+        public ECountry Country { get; set; }
         public Image Image { get; set; }
         public Decimal Consumption { get; set; }
         public Int32 HorsePower { get; set; }
