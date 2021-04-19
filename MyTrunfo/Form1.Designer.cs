@@ -44,7 +44,7 @@ namespace MyTrunfo
             this.lblPricePlayer2Value = new System.Windows.Forms.Label();
             this.lbldisplacementsPlayer2Value = new System.Windows.Forms.Label();
             this.lblSpeedPlayer2Value = new System.Windows.Forms.Label();
-            this.label10lblWidthPlayer2Value = new System.Windows.Forms.Label();
+            this.lblWidthPlayer2Value = new System.Windows.Forms.Label();
             this.lblPowerPlayer2Value = new System.Windows.Forms.Label();
             this.lblConsumptionPlayer2Value = new System.Windows.Forms.Label();
             this.lblPricePlayer2 = new System.Windows.Forms.Label();
@@ -345,7 +345,7 @@ namespace MyTrunfo
             this.pnl_player_2.Controls.Add(this.lblPricePlayer2Value);
             this.pnl_player_2.Controls.Add(this.lbldisplacementsPlayer2Value);
             this.pnl_player_2.Controls.Add(this.lblSpeedPlayer2Value);
-            this.pnl_player_2.Controls.Add(this.label10lblWidthPlayer2Value);
+            this.pnl_player_2.Controls.Add(this.lblWidthPlayer2Value);
             this.pnl_player_2.Controls.Add(this.lblPowerPlayer2Value);
             this.pnl_player_2.Controls.Add(this.lblConsumptionPlayer2Value);
             this.pnl_player_2.Controls.Add(this.lblPricePlayer2);
@@ -456,14 +456,14 @@ namespace MyTrunfo
             this.lblSpeedPlayer2Value.TabIndex = 51;
             this.lblSpeedPlayer2Value.Text = "0000";
             // 
-            // label10lblWidthPlayer2Value
+            // lblWidthPlayer2Value
             // 
-            this.label10lblWidthPlayer2Value.AutoSize = true;
-            this.label10lblWidthPlayer2Value.Location = new System.Drawing.Point(191, 399);
-            this.label10lblWidthPlayer2Value.Name = "label10lblWidthPlayer2Value";
-            this.label10lblWidthPlayer2Value.Size = new System.Drawing.Size(25, 13);
-            this.label10lblWidthPlayer2Value.TabIndex = 50;
-            this.label10lblWidthPlayer2Value.Text = "000";
+            this.lblWidthPlayer2Value.AutoSize = true;
+            this.lblWidthPlayer2Value.Location = new System.Drawing.Point(191, 399);
+            this.lblWidthPlayer2Value.Name = "lblWidthPlayer2Value";
+            this.lblWidthPlayer2Value.Size = new System.Drawing.Size(25, 13);
+            this.lblWidthPlayer2Value.TabIndex = 50;
+            this.lblWidthPlayer2Value.Text = "000";
             // 
             // lblPowerPlayer2Value
             // 
@@ -725,6 +725,7 @@ namespace MyTrunfo
             this.lblPricePlayer1.Size = new System.Drawing.Size(62, 13);
             this.lblPricePlayer1.TabIndex = 47;
             this.lblPricePlayer1.Text = "Preço K R$";
+            this.lblPricePlayer1.Click += new System.EventHandler(this.lblPricePlayer1_Click);
             // 
             // lbldisplacementsPlayer1
             // 
@@ -734,6 +735,7 @@ namespace MyTrunfo
             this.lbldisplacementsPlayer1.Size = new System.Drawing.Size(68, 13);
             this.lbldisplacementsPlayer1.TabIndex = 46;
             this.lbldisplacementsPlayer1.Text = "Cilindrada cc";
+            this.lbldisplacementsPlayer1.Click += new System.EventHandler(this.lbldisplacementsPlayer1_Click);
             // 
             // lblSpeedPlayer1
             // 
@@ -743,6 +745,7 @@ namespace MyTrunfo
             this.lblSpeedPlayer1.Size = new System.Drawing.Size(115, 13);
             this.lblSpeedPlayer1.TabIndex = 45;
             this.lblSpeedPlayer1.Text = "Velocidade Max KM/H";
+            this.lblSpeedPlayer1.Click += new System.EventHandler(this.lblSpeedPlayer1_Click);
             // 
             // lblWidthPlayer1
             // 
@@ -752,6 +755,7 @@ namespace MyTrunfo
             this.lblWidthPlayer1.Size = new System.Drawing.Size(60, 13);
             this.lblWidthPlayer1.TabIndex = 44;
             this.lblWidthPlayer1.Text = "Largura cm";
+            this.lblWidthPlayer1.Click += new System.EventHandler(this.lblWidthPlayer1_Click);
             // 
             // lblPowerPlayer1
             // 
@@ -1836,7 +1840,7 @@ namespace MyTrunfo
         private System.Windows.Forms.Label lblPricePlayer2Value;
         private System.Windows.Forms.Label lbldisplacementsPlayer2Value;
         private System.Windows.Forms.Label lblSpeedPlayer2Value;
-        private System.Windows.Forms.Label label10lblWidthPlayer2Value;
+        private System.Windows.Forms.Label lblWidthPlayer2Value;
         private System.Windows.Forms.Label lblPowerPlayer2Value;
         private System.Windows.Forms.Label lblConsumptionPlayer2Value;
         private System.Windows.Forms.Label lblPricePlayer2;

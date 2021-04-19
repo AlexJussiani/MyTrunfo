@@ -39,24 +39,170 @@ namespace MyTrunfo
             ResetPlayer(EPlayer.Player1);
             ResetPlayer(EPlayer.Player2);
             CreateCards();
-            CreationCards();
+            DistribuiteCards();
         }
 
-        //Esse metodo escolhe qual a categoria selecionada
-        private void type(ECategory eCategory)
-        {
-            //switch(eCategory)
-            //{
-            //    case ECategory.Consumption:
+        //Esse metodo verifica o vencedor
+        private void Compare(ECategory eCategory, EPlayer player)
+        {            
+            var winner = type(eCategory, player);
+            MessageBox.Show("Próxima Rodada!");
+            if (winner == EPlayer.Player1)
+            {                
+                Player1Cards.Add(Player2);
+                Player2Cards.Remove(Player2);
+            }
+            if (winner == EPlayer.Player2)
+            {
+                Player2Cards.Add(Player1);
+                Player1Cards.Remove(Player1);
+            }
+            UpdateCars();
+            initializeGame();
+        }
 
-            //}
+        private void UpdateCars()
+        {
+            //Player 1
+            picThumb1Player1.Visible = Player1Cards.Count >= 1;
+            picThumb2Player1.Visible = Player1Cards.Count >= 2;
+            picThumb3Player1.Visible = Player1Cards.Count >= 3;
+            picThumb4Player1.Visible = Player1Cards.Count >= 4;
+            picThumb5Player1.Visible = Player1Cards.Count >= 5;
+            picThumb6Player1.Visible = Player1Cards.Count >= 6;
+            picThumb7Player1.Visible = Player1Cards.Count >= 7;
+            picThumb8Player1.Visible = Player1Cards.Count >= 8;
+            picThumb9Player1.Visible = Player1Cards.Count >= 9;
+            picThumb10Player1.Visible = Player1Cards.Count >= 10;
+            picThumb11Player1.Visible = Player1Cards.Count >= 11;
+            picThumb12Player1.Visible = Player1Cards.Count >= 12;
+            picThumb13Player1.Visible = Player1Cards.Count >= 13;
+            picThumb14Player1.Visible = Player1Cards.Count >= 14;
+            picThumb15Player1.Visible = Player1Cards.Count >= 15;
+            picThumb16Player1.Visible = Player1Cards.Count >= 16;
+            picThumb17Player1.Visible = Player1Cards.Count >= 17;
+            picThumb18Player1.Visible = Player1Cards.Count >= 18;
+            picThumb19Player1.Visible = Player1Cards.Count >= 19;
+            picThumb20Player1.Visible = Player1Cards.Count >= 20;
+            picThumb21Player1.Visible = Player1Cards.Count >= 21;
+            picThumb22Player1.Visible = Player1Cards.Count >= 22;
+            picThumb23Player1.Visible = Player1Cards.Count >= 23;
+            picThumb24Player1.Visible = Player1Cards.Count >= 24;
+            picThumb25Player1.Visible = Player1Cards.Count >= 25;
+            picThumb26Player1.Visible = Player1Cards.Count >= 26;
+            picThumb27Player1.Visible = Player1Cards.Count >= 27;
+            picThumb28Player1.Visible = Player1Cards.Count >= 28;
+            picThumb29Player1.Visible = Player1Cards.Count >= 29;
+            picThumb30Player1.Visible = Player1Cards.Count >= 30;
+            picThumb31Player1.Visible = Player1Cards.Count >= 31;
+            picThumb32Player1.Visible = Player1Cards.Count >= 32;
+            picThumb33Player1.Visible = Player1Cards.Count >= 33;
+            picThumb34Player1.Visible = Player1Cards.Count >= 34;
+            picThumb35Player1.Visible = Player1Cards.Count >= 35;
+            picThumb36Player1.Visible = Player1Cards.Count >= 36;
+            picThumb37Player1.Visible = Player1Cards.Count >= 37;
+            picThumb38Player1.Visible = Player1Cards.Count >= 38;
+            picThumb39Player1.Visible = Player1Cards.Count >= 39;
+            picThumb40Player1.Visible = Player1Cards.Count >= 40;
+
+            //Player 2
+            picThumb1Player2.Visible = Player2Cards.Count >= 1;
+            picThumb2Player2.Visible = Player2Cards.Count >= 2;
+            picThumb3Player2.Visible = Player2Cards.Count >= 3;
+            picThumb4Player2.Visible = Player2Cards.Count >= 4;
+            picThumb5Player2.Visible = Player2Cards.Count >= 5;
+            picThumb6Player2.Visible = Player2Cards.Count >= 6;
+            picThumb7Player2.Visible = Player2Cards.Count >= 7;
+            picThumb8Player2.Visible = Player2Cards.Count >= 8;
+            picThumb9Player2.Visible = Player2Cards.Count >= 9;
+            picThumb10Player2.Visible = Player2Cards.Count >= 10;
+            picThumb11Player2.Visible = Player2Cards.Count >= 11;
+            picThumb12Player2.Visible = Player2Cards.Count >= 12;
+            picThumb13Player2.Visible = Player2Cards.Count >= 13;
+            picThumb14Player2.Visible = Player2Cards.Count >= 14;
+            picThumb15Player2.Visible = Player2Cards.Count >= 15;
+            picThumb16Player2.Visible = Player2Cards.Count >= 16;
+            picThumb17Player2.Visible = Player2Cards.Count >= 17;
+            picThumb18Player2.Visible = Player2Cards.Count >= 18;
+            picThumb19Player2.Visible = Player2Cards.Count >= 19;
+            picThumb20Player2.Visible = Player2Cards.Count >= 20;
+            picThumb21Player2.Visible = Player2Cards.Count >= 21;
+            picThumb22Player2.Visible = Player2Cards.Count >= 22;
+            picThumb23Player2.Visible = Player2Cards.Count >= 23;
+            picThumb24Player2.Visible = Player2Cards.Count >= 24;
+            picThumb25Player2.Visible = Player2Cards.Count >= 25;
+            picThumb26Player2.Visible = Player2Cards.Count >= 26;
+            picThumb27Player2.Visible = Player2Cards.Count >= 27;
+            picThumb28Player2.Visible = Player2Cards.Count >= 28;
+            picThumb29Player2.Visible = Player2Cards.Count >= 29;
+            picThumb30Player2.Visible = Player2Cards.Count >= 30;
+            picThumb31Player2.Visible = Player2Cards.Count >= 31;
+            picThumb32Player2.Visible = Player2Cards.Count >= 32;
+            picThumb33Player2.Visible = Player2Cards.Count >= 33;
+            picThumb34Player2.Visible = Player2Cards.Count >= 34;
+            picThumb35Player2.Visible = Player2Cards.Count >= 35;
+            picThumb36Player2.Visible = Player2Cards.Count >= 36;
+            picThumb37Player2.Visible = Player2Cards.Count >= 37;
+            picThumb38Player2.Visible = Player2Cards.Count >= 38;
+            picThumb39Player2.Visible = Player2Cards.Count >= 39;
+            picThumb40Player2.Visible = Player2Cards.Count >= 40;
+        }
+
+        //Esse metodo verifica qual a categoria selecionada e qual jogador foi o vencedor
+        private EPlayer type(ECategory eCategory, EPlayer player)
+        {   
+            Boolean player1 = false;
+            if (player == EPlayer.Player1)
+            {
+                if(eCategory == ECategory.Consumption)
+                {
+                    player1 = (Player1.Consumption > Player2.Consumption);
+                    lblConsumptionPlayer2Value.Text = Player2.Displacements.ToString();
+
+                }
+                if (eCategory == ECategory.Displacements)
+                {
+                    player1 = (Player1.Consumption > Player2.Consumption);
+                    lbldisplacementsPlayer2Value.Text = Player2.Displacements.ToString();
+                }
+                if (eCategory == ECategory.HorsePower)
+                {
+                    player1 = (Player1.HorsePower > Player2.HorsePower);
+                    lblPowerPlayer2Value.Text = Player2.HorsePower.ToString();
+                }
+                if (eCategory == ECategory.Length)
+                {
+                    player1 = (Player1.Length > Player2.Length);
+                    lblWidthPlayer2Value.Text = Player2.Length.ToString();
+                }
+                if (eCategory == ECategory.MaxSpeed)
+                {
+                    player1 = (Player1.MaxSpeed > Player2.MaxSpeed);
+                    lblSpeedPlayer2Value.Text = Player2.MaxSpeed.ToString();
+                }
+                if (eCategory == ECategory.Price)
+                {
+                    player1 = (Player1.Price < Player2.Price);
+                    lblPricePlayer2Value.Text = Player2.Price.ToString();
+                }
+            }
+            if (player1)
+            {
+                MessageBox.Show("Você Venceu! ");
+                return EPlayer.Player1;
+            }
+            else
+            {
+                MessageBox.Show("Você Perdeu! ");
+                return EPlayer.Player2;
+            }
         }
 
 
         //Esse metodo aplica as cartas de cada jogador a seu card
         private void initializeGame()
         {
-            Player2 = Player1Cards[new Random().Next(0, Player2Cards.Count)];
+            Player2 = Player2Cards[new Random().Next(0, Player2Cards.Count)];
             Player1 = Player1Cards[new Random().Next(0, Player1Cards.Count)];
             picCardPlay1.Image = Player1.Image;
             lblConsumptionPlayer1Value.Text = Player1.Consumption.ToString();
@@ -66,12 +212,18 @@ namespace MyTrunfo
             lblSpeedPlayer1Value.Text = Player1.MaxSpeed.ToString();
             lbldisplacementsPlayer1Value.Text = Player1.Displacements.ToString();
             lblPricePlayer1Value.Text = Player1.Price.ToString();
-
-
+            //Imagem do carro do player 2
+            picCardPlay2.Image = Player2.Image;
+            lblConsumptionPlayer2Value.Text = "";
+            lblPowerPlayer2Value.Text = "";
+            lblWidthPlayer2Value.Text = "";
+            lblSpeedPlayer2Value.Text = "";
+            lbldisplacementsPlayer2Value.Text = "";
+            lblPricePlayer2Value.Text = "";
         }
 
         //Esse metodo distribui igualmente as 40 cartas aleatorimente para cada Jogador.
-        private void CreationCards()
+        private void DistribuiteCards()
         {
             Player1Cards = new List<Car>();
             Player2Cards = new List<Car>();
@@ -81,7 +233,7 @@ namespace MyTrunfo
             while(CopyAllCards.Count != 0)
             {
                 index = random.Next(0, CopyAllCards.Count);
-                if(Player1Cards.Count == Player2Cards.Count)
+                if (Player1Cards.Count == Player2Cards.Count)
                     Player1Cards.Add(CopyAllCards[index]);
                 else
                     Player2Cards.Add(CopyAllCards[index]);
@@ -215,7 +367,7 @@ namespace MyTrunfo
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            Compare(ECategory.HorsePower, EPlayer.Player1);
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -231,11 +383,30 @@ namespace MyTrunfo
 
         private void lblConsumptionPlayer1_Click(object sender, EventArgs e)
         {
-
+            Compare(ECategory.Consumption, EPlayer.Player1);
         }
+
 
         #endregion
 
+        private void lblWidthPlayer1_Click(object sender, EventArgs e)
+        {
+            Compare(ECategory.Length, EPlayer.Player1);
+        }
 
+        private void lblSpeedPlayer1_Click(object sender, EventArgs e)
+        {
+            Compare(ECategory.MaxSpeed, EPlayer.Player1);
+        }
+
+        private void lbldisplacementsPlayer1_Click(object sender, EventArgs e)
+        {
+            Compare(ECategory.Displacements, EPlayer.Player1);
+        }
+
+        private void lblPricePlayer1_Click(object sender, EventArgs e)
+        {
+            Compare(ECategory.Price, EPlayer.Player1);
+        }
     }
 }
