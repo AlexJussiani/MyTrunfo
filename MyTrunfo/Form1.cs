@@ -3,6 +3,7 @@ using MyTrunfo.Model;
 using MyTrunfo.Properties;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace MyTrunfo
@@ -44,11 +45,11 @@ namespace MyTrunfo
 
         //Esse metodo verifica o vencedor
         private void Compare(ECategory eCategory, EPlayer player)
-        {            
+        {
             var winner = type(eCategory, player);
             MessageBox.Show("Próxima Rodada!");
             if (winner == EPlayer.Player1)
-            {                
+            {
                 Player1Cards.Add(Player2);
                 Player2Cards.Remove(Player2);
             }
@@ -58,7 +59,7 @@ namespace MyTrunfo
                 Player1Cards.Remove(Player1);
             }
             UpdateCars();
-            initializeGame();
+            InitializeGame();
         }
 
         private void UpdateCars()
@@ -150,11 +151,11 @@ namespace MyTrunfo
 
         //Esse metodo verifica qual a categoria selecionada e qual jogador foi o vencedor
         private EPlayer type(ECategory eCategory, EPlayer player)
-        {   
+        {
             Boolean player1 = false;
             if (player == EPlayer.Player1)
             {
-                if(eCategory == ECategory.Consumption)
+                if (eCategory == ECategory.Consumption)
                 {
                     player1 = (Player1.Consumption > Player2.Consumption);
                     lblConsumptionPlayer2Value.Text = Player2.Displacements.ToString();
@@ -200,33 +201,46 @@ namespace MyTrunfo
 
 
         //Esse metodo aplica as cartas de cada jogador a seu card
-        private void initializeGame()
+        private void InitializeGame()
         {
-            Player2 = Player2Cards[new Random().Next(0, Player2Cards.Count)];
-            Player1 = Player1Cards[new Random().Next(0, Player1Cards.Count)];
-            picCardPlay1.Image = Player1.Image;
-            lblConsumptionPlayer1Value.Text = Player1.Consumption.ToString();
-            lbCarBrandPlayer1 .Text = Player1.Name;
-            lblPowerPlayer1Value.Text = Player1.HorsePower.ToString();
-            lblWidthPlayer1Value.Text = Player1.Length.ToString();
-            lblSpeedPlayer1Value.Text = Player1.MaxSpeed.ToString();
-            lbldisplacementsPlayer1Value.Text = Player1.Displacements.ToString();
-            lblPricePlayer1Value.Text = Player1.Price.ToString();
-            //Imagem do carro do player 2
-            picCardPlay2.Image = Player2.Image;
-            lblConsumptionPlayer2Value.Text = "";
-            lblPowerPlayer2Value.Text = "";
-            lblWidthPlayer2Value.Text = "";
-            lblSpeedPlayer2Value.Text = "";
-            lbldisplacementsPlayer2Value.Text = "";
-            lblPricePlayer2Value.Text = "";
+            PopulatePlayer(EPlayer.Player1);
+            PopulatePlayer(EPlayer.Player2);
         }
+
+        private void PopulatePlayer(EPlayer player)
+        {
+            if (player == EPlayer.Player1)
+            { 
+                Player1 = Player1Cards.FirstOrDefault();
+                picCarPlayer1.Image = Player1.Image;
+                lblConsumptionPlayer1Value.Text = Player1.Consumption.ToString();
+                lbCarBrandPlayer1.Text = Player1.Name;
+                lblPowerPlayer1Value.Text = Player1.HorsePower.ToString();
+                lblWidthPlayer1Value.Text = Player1.Length.ToString();
+                lblSpeedPlayer1Value.Text = Player1.MaxSpeed.ToString();
+                lbldisplacementsPlayer1Value.Text = Player1.Displacements.ToString();
+                lblPricePlayer1Value.Text = Player1.Price.ToString();
+            }
+            else if(player == EPlayer.Player2)
+            {
+                Player2 = Player2Cards.FirstOrDefault();
+                picCarPlayer2.Image = Player2.Image;
+                lblConsumptionPlayer2Value.Text = Player2.Consumption.ToString();
+                lblPowerPlayer2Value.Text = Player2.Name;
+                lblWidthPlayer2Value.Text = Player2.HorsePower.ToString();
+                lblSpeedPlayer2Value.Text = Player2.Length.ToString();
+                lbldisplacementsPlayer2Value.Text = Player2.MaxSpeed.ToString();
+                lblPricePlayer2Value.Text = Player2.Price.ToString();
+            }
+        }
+
+
 
         //Esse metodo distribui igualmente as 40 cartas aleatorimente para cada Jogador.
         private void DistribuiteCards()
         {
             Player1Cards = new List<Car>();
-            Player2Cards = new List<Car>();
+            Player2Cards = new List<Car>(); 
             List<Car> CopyAllCards = AllCards;
             Random random = new Random();
             int index;
@@ -236,7 +250,7 @@ namespace MyTrunfo
                 if (Player1Cards.Count == Player2Cards.Count)
                     Player1Cards.Add(CopyAllCards[index]);
                 else
-                    Player2Cards.Add(CopyAllCards[index]);
+                    Player2Cards.Add(CopyAllCards[index]);                
                 CopyAllCards.RemoveAt(index);
             }
         }
@@ -378,7 +392,7 @@ namespace MyTrunfo
         private void btn_start_Click(object sender, EventArgs e)
         {
             lbNamePlayer1.Text = txt_name.Text;
-            initializeGame();
+            InitializeGame();
         }
 
         private void lblConsumptionPlayer1_Click(object sender, EventArgs e)
