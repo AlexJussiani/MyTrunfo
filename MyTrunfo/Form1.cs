@@ -20,8 +20,7 @@ namespace MyTrunfo
         public Car CarPlayer2 { get; set; }
         public Boolean Player1IsVisible { get; set; }
         public Boolean Player2IsVisible { get; set; }
-        public EPlayer CurrentWinner { get; set; }
-        public EPlayer LastWinner { get; set; }
+
         #endregion
 
         #region constructor
@@ -122,14 +121,25 @@ namespace MyTrunfo
 
         private void CheckWinner()
         {
-            if(Player2Cards.Count == 0)
-            {                
-                MessageBox.Show("Jogador 1 Venceu! ");
-                //MessageBox.Show("Deseja ")
-            }
             if (Player1Cards.Count == 0)
             {
+                MessageBox.Show("Jogador 2 Venceu! ");                
+            }
+            if (Player2Cards.Count == 0)
+            {
                 MessageBox.Show("Jogador 1 Venceu! ");
+            }
+            if (Player1Cards.Count == 0 || Player2Cards.Count == 0)
+            {
+                if (MessageBox.Show("Deseja jogar novamente?", "Fim do Jogo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    Player1IsVisible = false;
+                    Player1IsVisible = false;
+                    CreateCards();
+                    DistribuiteCards();
+                }
+                else
+                    Close();
             }
         }
 
