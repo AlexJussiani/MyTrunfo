@@ -38,6 +38,7 @@ namespace MyTrunfo
             this.lbl_NameApp = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_player_2 = new System.Windows.Forms.Panel();
+            this.picCarPlayer2 = new System.Windows.Forms.PictureBox();
             this.lbNamePlayer2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbCodePlayer2 = new System.Windows.Forms.Label();
@@ -100,6 +101,7 @@ namespace MyTrunfo
             this.picThumb1Player2 = new System.Windows.Forms.PictureBox();
             this.picCardPlay2 = new System.Windows.Forms.PictureBox();
             this.pnl_player_1 = new System.Windows.Forms.Panel();
+            this.picCarPlayer1 = new System.Windows.Forms.PictureBox();
             this.lbNamePlayer1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbCarBrandPlayer1 = new System.Windows.Forms.Label();
@@ -161,11 +163,10 @@ namespace MyTrunfo
             this.picThumb2Player1 = new System.Windows.Forms.PictureBox();
             this.picThumb1Player1 = new System.Windows.Forms.PictureBox();
             this.picCardPlay1 = new System.Windows.Forms.PictureBox();
-            this.picCarPlayer1 = new System.Windows.Forms.PictureBox();
-            this.picCarPlayer2 = new System.Windows.Forms.PictureBox();
             this.pnl_top.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnl_player_2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb40Player2)).BeginInit();
@@ -210,6 +211,7 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay2)).BeginInit();
             this.pnl_player_1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb40Player1)).BeginInit();
@@ -253,8 +255,6 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_top
@@ -406,6 +406,15 @@ namespace MyTrunfo
             this.pnl_player_2.Size = new System.Drawing.Size(305, 534);
             this.pnl_player_2.TabIndex = 1;
             this.pnl_player_2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // picCarPlayer2
+            // 
+            this.picCarPlayer2.Location = new System.Drawing.Point(39, 168);
+            this.picCarPlayer2.Name = "picCarPlayer2";
+            this.picCarPlayer2.Size = new System.Drawing.Size(195, 138);
+            this.picCarPlayer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCarPlayer2.TabIndex = 61;
+            this.picCarPlayer2.TabStop = false;
             // 
             // lbNamePlayer2
             // 
@@ -1068,6 +1077,15 @@ namespace MyTrunfo
             this.pnl_player_1.TabIndex = 0;
             this.pnl_player_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_player_1_Paint);
             // 
+            // picCarPlayer1
+            // 
+            this.picCarPlayer1.Location = new System.Drawing.Point(40, 166);
+            this.picCarPlayer1.Name = "picCarPlayer1";
+            this.picCarPlayer1.Size = new System.Drawing.Size(195, 138);
+            this.picCarPlayer1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCarPlayer1.TabIndex = 59;
+            this.picCarPlayer1.TabStop = false;
+            // 
             // lbNamePlayer1
             // 
             this.lbNamePlayer1.AutoSize = true;
@@ -1669,24 +1687,6 @@ namespace MyTrunfo
             this.picCardPlay1.TabIndex = 0;
             this.picCardPlay1.TabStop = false;
             // 
-            // picCarPlayer1
-            // 
-            this.picCarPlayer1.Location = new System.Drawing.Point(40, 166);
-            this.picCarPlayer1.Name = "picCarPlayer1";
-            this.picCarPlayer1.Size = new System.Drawing.Size(195, 138);
-            this.picCarPlayer1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCarPlayer1.TabIndex = 59;
-            this.picCarPlayer1.TabStop = false;
-            // 
-            // picCarPlayer2
-            // 
-            this.picCarPlayer2.Location = new System.Drawing.Point(39, 168);
-            this.picCarPlayer2.Name = "picCarPlayer2";
-            this.picCarPlayer2.Size = new System.Drawing.Size(195, 138);
-            this.picCarPlayer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCarPlayer2.TabIndex = 61;
-            this.picCarPlayer2.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1701,6 +1701,7 @@ namespace MyTrunfo
             this.panel1.ResumeLayout(false);
             this.pnl_player_2.ResumeLayout(false);
             this.pnl_player_2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -1747,6 +1748,7 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay2)).EndInit();
             this.pnl_player_1.ResumeLayout(false);
             this.pnl_player_1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -1791,8 +1793,6 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer2)).EndInit();
             this.ResumeLayout(false);
 
         }
