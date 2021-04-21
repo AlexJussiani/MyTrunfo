@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Enums\ECategory.cs" />
     <Compile Include="Enums\ECountry.cs" />
+    <Compile Include="Enums\EnumsToString.cs" />
     <Compile Include="Enums\EPlayer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
