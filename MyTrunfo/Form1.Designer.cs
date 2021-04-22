@@ -163,6 +163,8 @@ namespace MyTrunfo
             this.picThumb2Player1 = new System.Windows.Forms.PictureBox();
             this.picThumb1Player1 = new System.Windows.Forms.PictureBox();
             this.picCardPlay1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTiedCards = new System.Windows.Forms.Label();
             this.pnl_top.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnl_player_2.SuspendLayout();
@@ -255,6 +257,7 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_top
@@ -332,6 +335,7 @@ namespace MyTrunfo
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pnl_player_2);
             this.panel1.Controls.Add(this.pnl_player_1);
             this.panel1.Location = new System.Drawing.Point(13, 61);
@@ -1688,6 +1692,26 @@ namespace MyTrunfo
             this.picCardPlay1.TabIndex = 0;
             this.picCardPlay1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel2.Controls.Add(this.lblTiedCards);
+            this.panel2.Location = new System.Drawing.Point(335, 24);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(110, 100);
+            this.panel2.TabIndex = 2;
+            // 
+            // lblTiedCards
+            // 
+            this.lblTiedCards.AutoSize = true;
+            this.lblTiedCards.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
+            this.lblTiedCards.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTiedCards.Location = new System.Drawing.Point(33, 25);
+            this.lblTiedCards.Name = "lblTiedCards";
+            this.lblTiedCards.Size = new System.Drawing.Size(40, 47);
+            this.lblTiedCards.TabIndex = 1;
+            this.lblTiedCards.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1794,6 +1818,8 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1934,6 +1960,8 @@ namespace MyTrunfo
         private System.Windows.Forms.Label lbNamePlayer1;
         private System.Windows.Forms.PictureBox picCarPlayer2;
         private System.Windows.Forms.PictureBox picCarPlayer1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblTiedCards;
     }
 }
 
