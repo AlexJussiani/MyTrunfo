@@ -37,6 +37,8 @@ namespace MyTrunfo
             this.lblName = new System.Windows.Forms.Label();
             this.lbl_NameApp = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTiedCards = new System.Windows.Forms.Label();
             this.pnl_player_2 = new System.Windows.Forms.Panel();
             this.picCarPlayer2 = new System.Windows.Forms.PictureBox();
             this.lbNamePlayer2 = new System.Windows.Forms.Label();
@@ -163,10 +165,9 @@ namespace MyTrunfo
             this.picThumb2Player1 = new System.Windows.Forms.PictureBox();
             this.picThumb1Player1 = new System.Windows.Forms.PictureBox();
             this.picCardPlay1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblTiedCards = new System.Windows.Forms.Label();
             this.pnl_top.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.pnl_player_2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCountryPlayer2)).BeginInit();
@@ -257,7 +258,6 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_top
@@ -343,6 +343,26 @@ namespace MyTrunfo
             this.panel1.Size = new System.Drawing.Size(773, 570);
             this.panel1.TabIndex = 1;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel2.Controls.Add(this.lblTiedCards);
+            this.panel2.Location = new System.Drawing.Point(335, 24);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(110, 100);
+            this.panel2.TabIndex = 2;
+            // 
+            // lblTiedCards
+            // 
+            this.lblTiedCards.AutoSize = true;
+            this.lblTiedCards.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
+            this.lblTiedCards.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTiedCards.Location = new System.Drawing.Point(33, 25);
+            this.lblTiedCards.Name = "lblTiedCards";
+            this.lblTiedCards.Size = new System.Drawing.Size(40, 47);
+            this.lblTiedCards.TabIndex = 1;
+            this.lblTiedCards.Text = "0";
+            // 
             // pnl_player_2
             // 
             this.pnl_player_2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -424,17 +444,19 @@ namespace MyTrunfo
             // lbNamePlayer2
             // 
             this.lbNamePlayer2.AutoSize = true;
+            this.lbNamePlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNamePlayer2.Location = new System.Drawing.Point(91, 517);
             this.lbNamePlayer2.Name = "lbNamePlayer2";
-            this.lbNamePlayer2.Size = new System.Drawing.Size(77, 13);
+            this.lbNamePlayer2.Size = new System.Drawing.Size(112, 16);
             this.lbNamePlayer2.TabIndex = 60;
             this.lbNamePlayer2.Text = "PC (Jogador 2)";
             // 
             // picCountryPlayer2
             // 
-            this.picCountryPlayer2.Location = new System.Drawing.Point(207, 312);
+            this.picCountryPlayer2.Location = new System.Drawing.Point(194, 311);
             this.picCountryPlayer2.Name = "picCountryPlayer2";
-            this.picCountryPlayer2.Size = new System.Drawing.Size(19, 13);
+            this.picCountryPlayer2.Size = new System.Drawing.Size(35, 24);
+            this.picCountryPlayer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCountryPlayer2.TabIndex = 59;
             this.picCountryPlayer2.TabStop = false;
             // 
@@ -1094,18 +1116,20 @@ namespace MyTrunfo
             // lbNamePlayer1
             // 
             this.lbNamePlayer1.AutoSize = true;
+            this.lbNamePlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNamePlayer1.Location = new System.Drawing.Point(100, 516);
             this.lbNamePlayer1.Name = "lbNamePlayer1";
-            this.lbNamePlayer1.Size = new System.Drawing.Size(54, 13);
+            this.lbNamePlayer1.Size = new System.Drawing.Size(78, 16);
             this.lbNamePlayer1.TabIndex = 58;
             this.lbNamePlayer1.Text = "Jogador 1";
             // 
             // picCountryPlayer1
             // 
             this.picCountryPlayer1.InitialImage = null;
-            this.picCountryPlayer1.Location = new System.Drawing.Point(214, 316);
+            this.picCountryPlayer1.Location = new System.Drawing.Point(194, 311);
             this.picCountryPlayer1.Name = "picCountryPlayer1";
-            this.picCountryPlayer1.Size = new System.Drawing.Size(19, 13);
+            this.picCountryPlayer1.Size = new System.Drawing.Size(35, 24);
+            this.picCountryPlayer1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCountryPlayer1.TabIndex = 57;
             this.picCountryPlayer1.TabStop = false;
             // 
@@ -1692,26 +1716,6 @@ namespace MyTrunfo
             this.picCardPlay1.TabIndex = 0;
             this.picCardPlay1.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel2.Controls.Add(this.lblTiedCards);
-            this.panel2.Location = new System.Drawing.Point(335, 24);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(110, 100);
-            this.panel2.TabIndex = 2;
-            // 
-            // lblTiedCards
-            // 
-            this.lblTiedCards.AutoSize = true;
-            this.lblTiedCards.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
-            this.lblTiedCards.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTiedCards.Location = new System.Drawing.Point(33, 25);
-            this.lblTiedCards.Name = "lblTiedCards";
-            this.lblTiedCards.Size = new System.Drawing.Size(40, 47);
-            this.lblTiedCards.TabIndex = 1;
-            this.lblTiedCards.Text = "0";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1724,6 +1728,8 @@ namespace MyTrunfo
             this.pnl_top.ResumeLayout(false);
             this.pnl_top.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.pnl_player_2.ResumeLayout(false);
             this.pnl_player_2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCarPlayer2)).EndInit();
@@ -1818,8 +1824,6 @@ namespace MyTrunfo
             ((System.ComponentModel.ISupportInitialize)(this.picThumb2Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picThumb1Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCardPlay1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
